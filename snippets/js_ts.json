@@ -1,0 +1,13 @@
+{
+ "Sanity Field": {
+    "description": "Add a field to a sanity object / document",
+    "prefix": "snfl",
+    "body": [
+      "defineField({",
+      "\tname: \"${1:name}\",",
+      "\ttitle: \"${2:${1}}\",",
+      "\ttype: \"${3}\",",
+      "}),"
+    ]
+  }
+}
