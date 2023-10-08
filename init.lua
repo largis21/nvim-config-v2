@@ -28,7 +28,7 @@ vim.opt.relativenumber = true
 vim.opt.numberwidth = 1
 
 --Sign column
-vim.ops.signcolumn = "number"
+vim.opt.signcolumn = "number"
 
 --Indents
 vim.opt.tabstop = 2
