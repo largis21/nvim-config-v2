@@ -7,7 +7,7 @@ return {
   },
   config = function()
     require("mason-null-ls").setup({
-        ensure_installed = { "prettierd" }
+      ensure_installed = { "prettierd", "eslint_d" }
     })
   end,
 }
