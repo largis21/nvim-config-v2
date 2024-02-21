@@ -28,7 +28,7 @@ vim.opt.relativenumber = true
 vim.opt.numberwidth = 1
 
 --Sign column
-vim.opt.signcolumn = "number"
+vim.opt.signcolumn = "yes"
 
 --Indents
 vim.opt.tabstop = 2
@@ -56,7 +56,7 @@ vim.opt.termguicolors = true
 vim.opt.scrolloff = 8
 
 --Helper to avoid indenting too much
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "100"
 
 --Undotree
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undotree"
@@ -64,3 +64,5 @@ vim.opt.undofile = true
 
 --Use system clipboard
 vim.opt.clipboard = "unnamedplus"
+
+vim.opt.pumheight = 15
