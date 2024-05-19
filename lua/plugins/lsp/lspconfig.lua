@@ -11,6 +11,22 @@ return {
     local keymap = vim.keymap
     local opts = { noremap = true, silent = true }
 
+    vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
+      vim.lsp.handlers.hover,
+      { border = "rounded" }
+    )
+
+    vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(
+      vim.lsp.handlers.signature_help,
+      { border = "rounded" }
+    )
+
+    vim.diagnostic.config({
+      float = {
+        border = "rounded"
+      }
+    })
+
     local on_attach = function(client, bufnr)
       opts.buffer = bufnr
 
@@ -111,6 +127,11 @@ return {
           },
         },
       },
+    })
+
+    lspconfig["rust_analyzer"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
     })
   end
 }

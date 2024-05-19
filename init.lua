@@ -66,3 +66,7 @@ vim.opt.undofile = true
 vim.opt.clipboard = "unnamedplus"
 
 vim.opt.pumheight = 15
+
+--Highlight current line number
+vim.opt.cursorline = true
+vim.opt.cursorlineopt = "number"

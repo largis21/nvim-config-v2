@@ -43,7 +43,16 @@ vim.keymap.set("n", "<leader>ts2", ":set tabstop=2 | :set softtabstop=2 | :set s
 vim.keymap.set("n", "<C-l>", ":vertical res +10<CR>")
 vim.keymap.set("n", "<C-h>", ":vertical res -10<CR>")
 
---Disable cmd window
+-- Disable cmd window
 vim.keymap.set("n", "q:", "")
 
+-- See current scope
 vim.keymap.set("n", "<leader>s", ":IBLToggleScope<CR>")
+
+-- Delete without yanking
+vim.keymap.set("n", "<leader>d", "\"_d")
+vim.keymap.set("v", "<leader>d", "\"_d")
+
+-- Replace currently selected text with default register without yanking it
+-- vnoremap <leader>p "_dP
+vim.keymap.set("v", "<leader>p", "\"_dP")
