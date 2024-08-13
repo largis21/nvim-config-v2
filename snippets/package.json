@@ -1,5 +1,8 @@
 {
 	"name": "example-snippets",
+  "engines": {
+    "vscode": "^1.11.0"
+  },
 	"contributes": {
 		"snippets": [
 			{
@@ -10,6 +13,10 @@
           "typescriptreact"
         ],
 				"path": "./js_ts.json"
+			},
+			{
+				"language": "twig",
+				"path": "./twig.json"
 			}
 		]
 	}

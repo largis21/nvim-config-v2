@@ -25,10 +25,10 @@ require("lazy").setup({ { import = "plugins" }, { import = "plugins.lsp" } }, {
 --Numbers
 vim.opt.number = true
 vim.opt.relativenumber = true
-vim.opt.numberwidth = 1
+vim.opt.numberwidth = 3
 
 --Sign column
-vim.opt.signcolumn = "yes"
+vim.opt.signcolumn = "yes:1"
 
 --Indents
 vim.opt.tabstop = 2

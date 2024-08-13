@@ -1,5 +1,4 @@
 vim.g.mapleader = " "
---
 -- netrw
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
@@ -47,7 +46,8 @@ vim.keymap.set("n", "<C-h>", ":vertical res -10<CR>")
 vim.keymap.set("n", "q:", "")
 
 -- See current scope
-vim.keymap.set("n", "<leader>s", ":IBLToggleScope<CR>")
+-- Using <leader>s for symbol search in telescope.lua
+-- vim.keymap.set("n", "<leader>s", ":IBLToggleScope<CR>")
 
 -- Delete without yanking
 vim.keymap.set("n", "<leader>d", "\"_d")
